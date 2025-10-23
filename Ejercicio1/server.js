@@ -73,16 +73,16 @@ app.get("/form/:kpa", (req,res)=> {
                     goals: "Surpervisar que se van cumpliendo las metas propuestas en las fechas especificadas, y que no haya ningún imprevisto",
                     questions:
                     {
-                        1: "¿Qué plan de mitigación este listo para ser activado?",
-                        2: "¿Cual es el valor actual de este indicador y como se compara con la meta que habiamos definido?",
-                        3: "¿Que acciones o factores específicos están impulsando el resultado actual?",
-                        4: "Basandonos en el ritmo de progreso actual, ¿existe un riesgo alto de no alcanzar la meta para el final del periodo de medición?",
-                        5: "¿Hay alguna restricción operativa, cuello de botella o alguna dependencia crítica que limite la mejora de este resultado?",
-                        6: "Si el resultado no cumple con la meta establecida, ¿cuál es la acción de contención inmediata que se va a llevar a cabo y quien es el responsable de hacerlo?",
-                        7: "¿La variación de este resultado se debe a un problema de capacidad o de calidad?",
-                        8: "Si tuvieramos que simplificar el proceso para mejorar el resultado, ¿qué paso podríamos eliminar o automatizar sin comprometer la calidad?",
-                        9: "¿Cómo ha evolucionado este resultado en los últimos periodos y es esa la tendencia consistente con lo esperado?",
-                        10: "¿Como se comportan los resultados al desglosarlos por las categorias clave, y dónde observamos mayor disparidad?"
+                        1: "¿El porcentaje de Controles Críticos operacionales que fueron probados y documentados en el último ciclo de auditoría alcanzó el 100% del plan establecido?",
+                        2: "¿El tiempo promedio de respuesta y contención de incidentes de seguridad relacionados con fallas de control es menor a la meta establecida de 4 horas?",
+                        3: "¿La tasa de hallazgos de auditoría (interna y externa) clasificados como, alto riesgo, ha sido cero en los últimos dos trimestres?",
+                        4: "¿Existe un registro formal y actualizado de todas las excepciones permanentes a los controles de seguridad, con su justificación de riesgo y la aprobación de la gerencia de riesgo?",
+                        5: "¿El 95% del personal con responsabilidades de ejecución de controles ha completado la capacitación obligatoria y está al día con la certificación anual?",
+                        6: "¿Se realiza un monitoreo continuo (24/7) de los controles de seguridad perimetral, y se genera una alerta inmediata ante cualquier desviación o falla detectada?",
+                        7: "¿El promedio de días para cerrar las Acciones Correctivas y Preventivas (CAPAs) relacionadas con los controles es inferior al plazo máximo de 45 días establecido en la política?",
+                        8: "¿Se lleva a cabo una revisión trimestral de los accesos privilegiados, y se revocaron en el último periodo todos los accesos no justificados?",
+                        9: "¿Todos los cambios a los procedimientos de control (documentación) son revisados y aprobados formalmente por el dueño del proceso antes de su publicación e implementación?",
+                        10: "¿El proceso de autoevaluación de control (Control Self-Assessment - CSA) se completó a tiempo en todas las áreas designadas para el periodo actual?"
                     }
                 }
             );
@@ -116,16 +116,16 @@ app.get("/form/:kpa", (req,res)=> {
                     goals: "Garantizar que los productos, servicios y procesos del proyecto cumplan consistentemente con los requisitos y estándares definidos, mediante la planificación, monitoreo, verificación y mejora continua de las actividades de calidad.",
                     questions:
                     {
-                        1: "¿Existe un plan de aseguramiento de calidad documentado que describa los procesos, estándares y métricas a seguir para cada proyecto?",
-                        2: "¿Se realizan revisiones periódicas de los productos y procesos para asegurar que cumplan con los requisitos y estándares establecidos?",
-                        3: "¿Se identifican y registran las desviaciones de calidad y se implementan acciones correctivas de manera documentada?",
-                        4: "¿Se lleva un seguimiento formal del estado de los problemas de calidad hasta su resolución?",
-                        5: "¿Los equipos de proyecto reciben formación o capacitación en los procesos y estándares de calidad definidos?",
-                        6: "¿Se asegura que los proveedores externos cumplan con los estándares de calidad acordados?",
-                        7: "¿Existen registros de auditorías o revisiones de calidad y se usan como insumo para mejorar los procesos?",
-                        8: "¿Se monitorean y reportan métricas de calidad durante el desarrollo del proyecto (por ejemplo, defectos encontrados, cumplimiento de estándares)?",
-                        9: "¿Se planifican y ejecutan actividades de verificación y validación de productos de manera consistente con los objetivos del proyecto?",
-                        10: "¿El aseguramiento de calidad participa activamente en revisiones de hitos críticos para garantizar la conformidad con los criterios de aceptación?"
+                        1: "¿El 100% de los Elementos de Configuración (EC) críticos (servidores, bases de datos) tiene una Línea Base de Configuración formalmente definida y aprobada?",
+                        2: "¿La tasa de exactitud entre el Inventario de Elementos de Configuración (CMDB: Configuration Management Database) y los activos descubiertos en la red mediante herramientas automatizadas es superior al 98%?",
+                        3: "¿Todas las desviaciones no planificadas de la Línea Base de Configuración (configuración incorrecta o faltante) se detectan y corrigen en un plazo máximo de 7 días?",
+                        4: "¿El sistema de control de versiones almacena y mantiene la trazabilidad completa (versión, autor, aprobación) del 100% de los artefactos de software desplegados en Producción?",
+                        5: "¿El tiempo promedio para revertir a una Línea Base de Configuración conocida y estable tras un fallo es inferior al objetivo de 15 minutos?",
+                        6: "¿Se lleva a cabo al menos una auditoría semestral al CMDB para verificar la integridad, exactitud y completitud de los datos de configuración?",
+                        7: "¿El 100% de los elementos de configuración de red (routers, firewalls) tiene un perfil de seguridad de configuración estándar aplicado y monitoreado automáticamente?",
+                        8: "¿Todas las solicitudes de cambio de configuración pasan por una simulación o prueba de impacto automatizada antes de ser aprobadas para su implementación en Producción?",
+                        9: "¿El porcentaje de fallas o incidentes en Producción atribuibles a configuraciones incorrectas o no controladas es inferior al umbral del 2% del total de incidentes?",
+                        10: "¿Los procesos de adquisición y desmantelamiento de activos incluyen la actualización obligatoria y oportuna de los registros de Elementos de Configuración en el CMDB?"
                     },
                 }                      
             );
@@ -224,3 +224,4 @@ app.listen(PORT, ()=>{
     console.log("Escuchando en el puerto:", PORT);
     console.log(`http://localhost:${PORT}`);
 })
+
